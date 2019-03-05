@@ -25,39 +25,37 @@ SSH port: 2200
 ## Installing the WSGI application
 Update your instance
 
-++1)Install python 
+- Install python 
 sudo apt-get install python2.7-dev
 
-++2) Install apache server
+- Install apache server
 sudo apt-get install apache2
-++3) Install wsgi
+- Install wsgi
 sudo apt-get install libapache2-mod-wsgi
-++4) Install pip for python 2
+- Install pip for python 2
 sudo apt-get install python-pip
-++5) Install flask for python 2
+- Install flask for python 2
 sudo pip install flask
--Inside /var/www/html make a directory for your app
+- Inside /var/www/html make a directory for your app
 mkdir /Library
-++6) Clone your app inside the above directory
+- Clone your app inside the above directory
 git clone "url"
-++7) Create a wsgi file
+- Create a wsgi file
 import sys
 sys.path.insert(0, '/var/www/html/Library')
-++7) Create a __init__.py empty file
+- Create a __init__.py empty file
 sudo touch __init__.py
-++8) Edit the 000-default.conf file 
+- Edit the 000-default.conf file 
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 Add this line of code below /var/www/html 
-
 WSGIScriptAlias / /var/www/html/Library/library.wsgi
-
 <Directory library>
     WSGIProcessGroup library
     WSGIApplicationGroup %{GLOBAL}
     Order deny,allow
     Allow from all
 </Directory>
-++9) Restart Apache server
+- Restart Apache server
 sudo service apache2 restart
 ## Additional Resoures:
 - Installing Flask with wsgi:
