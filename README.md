@@ -8,10 +8,10 @@ host a web application programmed using python.
 ## Web Application
 library.almadarisp.com
 ## Application used
--Appache Server
--PostgreSQL
--python
--WSGI Model
+- Appache Server
+- PostgreSQL
+- python
+- WSGI Model
 ## Changes Made
 - change ssh defaul port to 2200
 - allow only key based ssh
