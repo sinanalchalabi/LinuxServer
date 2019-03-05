@@ -22,6 +22,7 @@ SSH port: 2200
 - configuring the firewall to add more security
 - configuring appache,PostgreSQL and wsgi to host my app
 - Installing unattended-upgrade for auto update
+
 ## Installing the WSGI application
 Update your instance
 
@@ -57,9 +58,10 @@ WSGIScriptAlias / /var/www/html/Library/library.wsgi
 </Directory>
 - Restart Apache server
 sudo service apache2 restart
-## Additional Resoures:
-- Installing Flask with wsgi:
+
+## Additional Resoures
+- Installing Flask with wsgi
 http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/
-- Github Amazon webserver tutorial:
+- Github Amazon webserver tutorial
 https://github.com/JaeDukSeo/Amazon_webservice_Tutorial
 - Udacity Linux servers course
