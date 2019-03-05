@@ -20,4 +20,4 @@ library.almadarisp.com
 - giving each file required permission and owner
 - configuring the firewall to add more security
 - configuring appache,PostgreSQL and wsgi to host my app
-### Grader key attached at the Reop
+### Grader key attached at the Repo
