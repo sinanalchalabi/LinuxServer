@@ -49,6 +49,7 @@ sudo touch __init__.py
 - Edit the 000-default.conf file 
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 Add this line of code below /var/www/html 
+
 WSGIScriptAlias / /var/www/html/Library/library.wsgi
 <Directory library>
     WSGIProcessGroup library
@@ -56,6 +57,7 @@ WSGIScriptAlias / /var/www/html/Library/library.wsgi
     Order deny,allow
     Allow from all
 </Directory>
+
 - Restart Apache server
 sudo service apache2 restart
 
